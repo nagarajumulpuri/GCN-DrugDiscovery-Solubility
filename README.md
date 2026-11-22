@@ -1,4 +1,4 @@
-# Predicting Solubility of Molecules using Graphical Convolution Network Model
+# Predicting Solubility of Molecules Using a Graph Convolutional Network Model
 <img width="987" height="761" alt="image" src="https://github.com/user-attachments/assets/53e67b38-c8ef-4af0-af81-9a11c1433525" />
 
 ## Project Objectives
