@@ -7,9 +7,9 @@
 ## Required Libraries
 - torch <br>
 - torch-geometric <br>
-rdkit <br>
-pandas <br>
-numpy <br>
-scikit-learn <br>
-matplotlib <br>
-tqdm <br>
+- rdkit <br>
+- pandas <br>
+- numpy <br>
+- scikit-learn <br>
+- matplotlib <br>
+- tqdm <br>
