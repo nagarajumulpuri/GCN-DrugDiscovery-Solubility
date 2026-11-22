@@ -5,11 +5,11 @@
 <img width="672" height="711" alt="image" src="https://github.com/user-attachments/assets/1bebb093-71f8-4a38-9f3f-027ae9a81a4e" />
 
 ## Required Libraries
-torch
-torch-geometric
-rdkit
-pandas
-numpy
-scikit-learn
-matplotlib
-tqdm
+torch <br>
+torch-geometric <br>
+rdkit <br>
+pandas <br>
+numpy <br>
+scikit-learn <br>
+matplotlib <br>
+tqdm <br>
