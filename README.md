@@ -5,8 +5,8 @@
 <img width="672" height="711" alt="image" src="https://github.com/user-attachments/assets/1bebb093-71f8-4a38-9f3f-027ae9a81a4e" />
 
 ## Required Libraries
-torch <br>
-torch-geometric <br>
+- torch <br>
+- torch-geometric <br>
 rdkit <br>
 pandas <br>
 numpy <br>
