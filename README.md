@@ -101,18 +101,18 @@ The basic GCN is trained using:
 Improve the basic GCN workflow and evaluate the model's ability to generalize to structurally distinct molecules.
 
 ## 2.1 Scaffold splitting
-Random splitting may place structurally similar molecules into both training and test sets, potentially resulting in overly optimistic evaluation.
+Random splitting may place structurally similar molecules into both training and test sets, potentially resulting in overly optimistic evaluation. <br>
 To reduce this risk, this project uses a scaffold-based split using Bemis-Murcko scaffolds.
 ## Dataset split
  - Training: approximately 80%
  - Validation: approximately 10%
- - Test: approximately 10%
-The scaffold groups are assigned to separate partitions, with the split proportions approximated by a greedy allocation algorithm.
+ - Test: approximately 10% <br>
+The scaffold groups are assigned to separate partitions, with the split proportions approximated by a greedy allocation algorithm. <br>
 The same split indices are reused for the Random Forest and subsequent GNN comparisons.
 ## Scaffold split objectives
  - Reduce structural overlap between partitions.
  - Evaluate model generalization to new molecular scaffolds.
  - Avoid using test data during model selection.
- - Ensure fair comparisons between models.
+ - Ensure fair comparisons between models. <br>
 The scaffold allocation implementation is a simplified greedy method, rather than a fully optimized scaffold-splitting algorithm. Acyclic molecules are grouped under a common fallback scaffold in the initial implementation, which can affect split proportions. This should be considered when interpreting the split.
 
