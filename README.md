@@ -252,27 +252,27 @@ GCN-DrugDiscovery/  <br>
 ├── results/  <br>
 │   ├── split_indices.json  <br>
 │   ├── training_history.csv  <br>
-│   ├── gcn_metrics.csv  
-│   ├── rf_metrics.csv  
-│   ├── model_comparison.csv  
-│   ├── gcn_test_predictions.csv  
-│   ├── rf_test_predictions.csv  
-│   ├── training_curves.png  
-│   ├── gcn_prediction_plot.png  
-│   ├── rf_prediction_plot.png  
-│   ├── bond_gnn_comparison.csv  
-│   ├── part3_all_model_comparison.csv  
-│   └── ...  
-│  
-├── split_utils.py  
-├── train_gcn_part2.py  
-├── baseline_rf.py  
-├── compare_models.py  
-├── bond_features.py  
-├── bond_aware_models.py  
-├── train_bond_gnns.py  
-├── compare_part3.py  
-│  
-├── README.md  
-└── .gitignore  
+│   ├── gcn_metrics.csv  <br>
+│   ├── rf_metrics.csv  <br>
+│   ├── model_comparison.csv  <br>
+│   ├── gcn_test_predictions.csv  <br>
+│   ├── rf_test_predictions.csv  <br>
+│   ├── training_curves.png  <br>
+│   ├── gcn_prediction_plot.png  <br>
+│   ├── rf_prediction_plot.png  <br>
+│   ├── bond_gnn_comparison.csv  <br>
+│   ├── part3_all_model_comparison.csv  <br>
+│   └── ...  <br>
+│  <br>
+├── split_utils.py  <br>
+├── train_gcn_part2.py  <br>
+├── baseline_rf.py  <br>
+├── compare_models.py  <br>
+├── bond_features.py  <br>
+├── bond_aware_models.py  <br>
+├── train_bond_gnns.py  <br>
+├── compare_part3.py  <br>
+│  <br>
+├── README.md  <br>
+└── .gitignore  <br>
 
