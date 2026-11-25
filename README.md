@@ -58,29 +58,29 @@ Molecular Graph <br>
     $\qquad$ $\qquad$ |  <br>
     $\qquad$ $\qquad$ v  <br>
 Categorical Atom Features <br>
-     | <br>
-     v <br>
+    $\qquad$ $\qquad$  | <br>
+    $\qquad$ $\qquad$ v <br>
 Atom Embeddings <br>
-     | <br>
-     v <br>
+    $\qquad$ $\qquad$ | <br>
+    $\qquad$ $\qquad$ v <br>
 GCN Layer 1  <br>
-     | <br>
-     v <br>
+    $\qquad$ $\qquad$  | <br>
+    $\qquad$ $\qquad$  v <br>
 ReLU <br>
-     | <br>
-     v <br>
+    $\qquad$ $\qquad$  | <br>
+    $\qquad$ $\qquad$  v <br>
 GCN Layer 2 <br>
-     | <br>
-     v <br>
+    $\qquad$ $\qquad$ | <br>
+    $\qquad$ $\qquad$ v <br>
 ReLU <br>
-     | <br>
-     v <br>
+    $\qquad$ $\qquad$ | <br>
+    $\qquad$ $\qquad$ v <br>
 Global Mean Pooling <br>
-     | <br>
-     v <br>
+    $\qquad$ $\qquad$  | <br>
+    $\qquad$ $\qquad$  v <br>
 Fully Connected Layers <br>
-     | <br>
-     v <br>
+    $\qquad$ $\qquad$ | <br>
+    $\qquad$ $\qquad$ v <br>
 Predicted Solubility <br>
 
 ## Training
