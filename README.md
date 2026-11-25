@@ -315,6 +315,7 @@ This trains: <br>
    - Bond-aware GIN
    - Bond-aware GraphSAGE
    - Bond-aware GAT <br>
+
 Then run: <br>
 $\qquad$ $\qquad$ **python compare_part3.py** <br>
 This produces the combined model comparison.
