@@ -52,11 +52,11 @@ The basic GCN consists of:
 
 ## Architecture
 Molecular SMILES <br>
-      │  
-      v  
+    $\quad$   │  
+    $\quad$   v  
 Molecular Graph <br>
-     |  <br>
-     v  <br>
+    $\quad$  |  <br>
+    $\quad$  v  <br>
 Categorical Atom Features <br>
      | <br>
      v <br>
