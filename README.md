@@ -173,10 +173,67 @@ A Random Forest model is implemented using Morgan fingerprints.
 The Part 2 comparison evaluates:
    - GCN
    - Random Forest
-Metrics:
+Metrics: <br>
    - Test MAE
    - Test RMSE
    - Test R²
 
 ## Part 3 — Bond-Aware GNNs
+### Objective
+Implement bond-aware graph neural networks and compare four architectures:
+  - GCN
+  - GIN
+  - GraphSAGE
+  - GAT
+All models use atom embeddings and bond embeddings.
+
+### 3.1 Bond-aware molecular representation
+Each molecular graph contains:
+### Nodes
+Atoms represented by categorical atom features.
+### Edges
+Chemical bonds represented by categorical bond features. <br>
+The bond features are embedded into learned numerical vectors and incorporated into message-passing layers. 
+### 3.2 Atom encoder
+Categorical atom features are mapped to learned embeddings.
+### 3.3 Bond encoder
+Categorical bond features are mapped to learned embeddings.
+The bond representation is incorporated into neighboring atom messages.
+### 3.4 Bond-aware GCN
+The bond-aware GCN incorporates bond embeddings into degree-normalized neighbor aggregation. <br>
+The model uses:
+    - Atom embeddings
+    - Bond embeddings
+    - Degree-normalized message passing
+    - Self-loops
+    - Batch normalization
+    - ReLU
+    - Residual connections
+    - Dropout
+    - Global mean pooling
+    - Regression head
+This is a custom bond-aware GCN implementation rather than an exact implementation of the canonical GCN formulation. <br>
+
+### 3.5 Bond-aware GIN
+The Graph Isomorphism Network uses sum aggregation. <br>
+GIN is implemented with:
+   - Sum aggregation
+   - Learnable epsilon
+   - MLP transformation
+   - Bond-enriched neighbor messages
+
+### 3.6 Bond-aware GraphSAGE
+GraphSAGE aggregates neighboring atom representations using mean aggregation. <br>
+The model combines the node's own representation with its aggregated neighboring information. <br>
+
+### 3.7 Bond-aware GAT
+Graph Attention Network uses learned attention weights to determine the contribution of neighboring atoms. <br>
+The implementation uses multi-head attention and incorporates bond information into the attention mechanism and message representation. <br>
+
+### 3.8 Model comparison
+The four bond-aware GNNs are evaluated using the same dataset and scaffold split. <br>
+<img width="950" height="580" alt="image" src="https://github.com/user-attachments/assets/8cd813b5-5965-4891-a00b-1ab7464a9e30" />
+
+## Project Structure
+<img width="1536" height="1024" alt="GCN Drug Discovery Project Structure" src="https://github.com/user-attachments/assets/8fb74992-ece7-4316-a58e-d059d096918e" />
 
