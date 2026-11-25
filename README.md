@@ -6,9 +6,9 @@ Molecular solubility is an important physicochemical property in drug discovery,
 In this project, molecular structures are represented as graphs, where atoms are nodes and chemical bonds are edges. Graph Neural Networks are trained to learn molecular representations and predict aqueous solubility.
 
 The project is divided into three parts:
-- Part 1: Build a basic Graph Convolutional Network (GCN) for molecular solubility prediction.
-- Part 2: Improve the workflow using scaffold splitting, training-curve visualization, prediction analysis and Random Forest benchmarking.
-- Part 3: Implement bond-aware GNNs and compare GCN, GIN, GraphSAGE and GAT architectures.
+- **Part 1:** Build a basic Graph Convolutional Network (GCN) for molecular solubility prediction.
+- **Part 2:** Improve the workflow using scaffold splitting, training-curve visualization, prediction analysis and Random Forest benchmarking.
+- **Part 3:** Implement bond-aware GNNs and compare GCN, GIN, GraphSAGE and GAT architectures.
 
 ## Project Objectives
 - Learn how molecular structures are represented as graphs.
