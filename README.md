@@ -236,22 +236,22 @@ The four bond-aware GNNs are evaluated using the same dataset and scaffold split
 
 ## Project Structure
 <img width="1536" height="1024" alt="GCN Drug Discovery Project Structure" src="https://github.com/user-attachments/assets/8fb74992-ece7-4316-a58e-d059d096918e" />
-GCN-DrugDiscovery/  
-│  
-├── data/  
-│   └── ESOL/  
-│  
-├── models/  
-│   ├── best_gcn.pt  
-│   ├── random_forest.pkl  
-│   ├── best_gcn_bond_gnn.pt  
-│   ├── best_gin_bond_gnn.pt  
-│   ├── best_graphsage_bond_gnn.pt  
-│   └── best_gat_bond_gnn.pt  
-│  
-├── results/  
-│   ├── split_indices.json  
-│   ├── training_history.csv  
+GCN-DrugDiscovery/  <br>
+│  <br>
+├── data/  <br>
+│   └── ESOL/  <br>
+│  <br>
+├── models/  <br>
+│   ├── best_gcn.pt  <br>
+│   ├── random_forest.pkl  <br>
+│   ├── best_gcn_bond_gnn.pt  <br>
+│   ├── best_gin_bond_gnn.pt  <br>
+│   ├── best_graphsage_bond_gnn.pt  <br>
+│   └── best_gat_bond_gnn.pt  <br>
+│  <br>
+├── results/  <br>
+│   ├── split_indices.json  <br>
+│   ├── training_history.csv  <br>
 │   ├── gcn_metrics.csv  
 │   ├── rf_metrics.csv  
 │   ├── model_comparison.csv  
