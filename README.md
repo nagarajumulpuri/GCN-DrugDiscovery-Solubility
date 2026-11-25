@@ -52,8 +52,8 @@ The basic GCN consists of:
 
 ## Architecture
 Molecular SMILES <br>
-    <\t> |   <br>
-     <\t> v    <br>
+       |   <br>
+       v    <br>
 Molecular Graph <br>
      |  <br>
      v  <br>
