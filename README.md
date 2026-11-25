@@ -301,22 +301,22 @@ The basic model trains on ESOL molecular graphs and evaluates solubility predict
 
 ### Part 2
 Run: <br>
-   $\qquad$ $\qquad$ **python train_gcn_part2.py** <br>
+$\qquad$ $\qquad$ **python train_gcn_part2.py** <br>
 Then: <br>
-  $\qquad$ $\qquad$ **python baseline_rf.py** <br>
+$\qquad$ $\qquad$ **python baseline_rf.py** <br>
 Finally: <br>
-  $\qquad$ $\qquad$ **python compare_models.py** <br>
+$\qquad$ $\qquad$ **python compare_models.py** <br>
 
 ### Part 3
 Run: <br>
-    $\qquad$ $\qquad$ **python train_bond_gnns.py** <br>
+$\qquad$ $\qquad$ **python train_bond_gnns.py** <br>
 This trains: <br>
    - Bond-aware GCN
    - Bond-aware GIN
    - Bond-aware GraphSAGE
    - Bond-aware GAT
 Then run: <br>
-   $\qquad$ $\qquad$ **python compare_part3.py** <br>
+$\qquad$ $\qquad$ **python compare_part3.py** <br>
 This produces the combined model comparison.
 
 ### Limitations
