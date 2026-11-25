@@ -51,8 +51,8 @@ The basic GCN consists of:
 8. Solubility prediction.
 
 ## Architecture
-Molecular SMILES <br>
-<center>│<br>v</center>
+Molecular SMILES <br>  
+    <center>│<br>v</center>  
 Molecular Graph <br>
      |  <br>
      v  <br>
