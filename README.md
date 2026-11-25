@@ -232,7 +232,8 @@ The implementation uses multi-head attention and incorporates bond information i
 
 ### 3.8 Model comparison
 The four bond-aware GNNs are evaluated using the same dataset and scaffold split. <br>
-<img width="950" height="580" alt="image" src="https://github.com/user-attachments/assets/8cd813b5-5965-4891-a00b-1ab7464a9e30" />
+####         Model                       Aggregation                        Bond Information
+              GCN                  Normalized aggregation                Bond-enriched messages
 
 ## Project Structure
 GCN-DrugDiscovery/  <br>
