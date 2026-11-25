@@ -51,37 +51,37 @@ The basic GCN consists of:
 8. Solubility prediction.
 
 ## Architecture
-Molecular SMILES
-     |
-     v
-Molecular Graph
-     |
-     v
-Categorical Atom Features
-     |
-     v
-Atom Embeddings
-     |
-     v
-GCN Layer 1
-     |
-     v
-ReLU
-     |
-     v
-GCN Layer 2
-     |
-     v
-ReLU
-     |
-     v
-Global Mean Pooling
-     |
-     v
-Fully Connected Layers
-     |
-     v
-Predicted Solubility
+Molecular SMILES <br>
+     |   <br>
+     v    <br>
+Molecular Graph <br>
+     |  <br>
+     v  <br>
+Categorical Atom Features <br>
+     | <br>
+     v <br>
+Atom Embeddings <br>
+     | <br>
+     v <br>
+GCN Layer 1  <br>
+     | <br>
+     v <br>
+ReLU <br>
+     | <br>
+     v <br>
+GCN Layer 2 <br>
+     | <br>
+     v <br>
+ReLU <br>
+     | <br>
+     v <br>
+Global Mean Pooling <br>
+     | <br>
+     v <br>
+Fully Connected Layers <br>
+     | <br>
+     v <br>
+Predicted Solubility <br>
 
 ## Training
 The basic GCN is trained using:
