@@ -100,19 +100,83 @@ The basic GCN is trained using:
 ## Objective
 Improve the basic GCN workflow and evaluate the model's ability to generalize to structurally distinct molecules.
 
-## 2.1 Scaffold splitting
+### 2.1 Scaffold splitting
 Random splitting may place structurally similar molecules into both training and test sets, potentially resulting in overly optimistic evaluation. <br>
 To reduce this risk, this project uses a scaffold-based split using Bemis-Murcko scaffolds.
-## Dataset split
+### Dataset split
  - Training: approximately 80%
  - Validation: approximately 10%
  - Test: approximately 10% <br>
 The scaffold groups are assigned to separate partitions, with the split proportions approximated by a greedy allocation algorithm. <br>
 The same split indices are reused for the Random Forest and subsequent GNN comparisons.
-## Scaffold split objectives
+### Scaffold split objectives
  - Reduce structural overlap between partitions.
  - Evaluate model generalization to new molecular scaffolds.
  - Avoid using test data during model selection.
  - Ensure fair comparisons between models. <br>
 The scaffold allocation implementation is a simplified greedy method, rather than a fully optimized scaffold-splitting algorithm. Acyclic molecules are grouped under a common fallback scaffold in the initial implementation, which can affect split proportions. This should be considered when interpreting the split.
+### 2.2 GCN training improvements
+The Part 2 GCN incorporates:
+ - Scaffold splitting
+ - Training and validation monitoring
+ - Best-model checkpointing
+ - Training-curve visualization
+ - Prediction analysis
+ - Test-set evaluation
+
+### 2.3 Training curves
+The training script generates:
+ - Training MAE versus epoch
+ - Validation MAE versus epoch
+These curves help identify:
+ - Model convergence
+ - Overfitting
+ - Underfitting
+ - Training instability
+
+### 2.4 Experimental versus predicted solubility
+The project generates a scatter plot comparing:
+ - Experimental solubility
+ - Predicted solubility <br>
+A diagonal reference line represents perfect prediction.
+
+### 2.5 Prediction error analysis
+The test predictions are analyzed using absolute error. <br>
+The analysis can help identify:
+ - Poorly predicted molecules
+ - Unfamiliar scaffolds
+ - Molecular complexity
+ - Functional groups
+ - Possible limitations in training data
+
+### 2.6 Random Forest baseline
+A Random Forest model is implemented using Morgan fingerprints.
+### Molecular representation
+ - Morgan fingerprint radius: 2
+ - Fingerprint size: 2048 bits
+
+### Random Forest configuration
+ - Number of trees: 500
+ - max_features: 0.7
+ - min_samples_leaf: 1
+ - Random seed: 42
+
+### Workflow
+1. Generate Morgan fingerprints.
+2. Use the same scaffold split as the GCN.
+3. Train the Random Forest.
+4. Evaluate the model.
+5. Save predictions.
+6. Compare against the GCN.
+
+### 2.7 Model comparison
+The Part 2 comparison evaluates:
+   - GCN
+   - Random Forest
+Metrics:
+   - Test MAE
+   - Test RMSE
+   - Test R²
+
+## Part 3 — Bond-Aware GNNs
 
