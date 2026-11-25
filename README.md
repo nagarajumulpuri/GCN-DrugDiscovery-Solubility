@@ -274,3 +274,61 @@ GCN-DrugDiscovery/  <br>
 ├── README.md  <br>
 └── .gitignore  <br>
 
+## Installation
+### Requirements
+ - Python 3.11 recommended
+ - PyTorch
+ - PyTorch Geometric
+ - RDKit
+ - NumPy
+ - Pandas
+ - Matplotlib
+ - Scikit-learn
+
+## Running the Project
+### Part 1
+Run the basic GCN training script from Part 1. <br>
+The basic model trains on ESOL molecular graphs and evaluates solubility prediction performance. <br>
+
+### Part 2
+Run: <br>
+   python train_gcn_part2.py <br>
+Then: <br>
+  python baseline_rf.py <br>
+Finally: <br>
+  python compare_models.py <br>
+
+### Part 3
+Run: <br>
+    python train_bond_gnns.py <br>
+This trains: <br>
+   - Bond-aware GCN
+   - Bond-aware GIN
+   - Bond-aware GraphSAGE
+   - Bond-aware GAT
+Then run: <br>
+   python compare_part3.py <br>
+This produces the combined model comparison.
+
+### Limitations
+- ESOL is a relatively small molecular dataset.
+- Model performance depends on the scaffold split and data quality.
+- Scaffold split proportions may deviate from the target proportions due to scaffold group sizes.
+- The initial acyclic scaffold grouping can result in disproportionately large scaffold groups.
+- The bond-aware models are custom implementations and are not exact reproductions of every architecture in the original literature.
+- The project uses a fixed dataset split and a single training seed for the initial comparison.
+- Hyperparameter tuning is limited.
+- No ensemble uncertainty estimation is implemented.
+- Solubility predictions do not replace experimental measurements.
+- Performance on ESOL does not establish performance on other chemical datasets or drug-discovery tasks.
+
+### Future Development
+Potential extensions: <br>
+ - Hyperparameter optimization.
+ - Multiple random seeds.
+ - Repeated scaffold splits.
+ - Additional molecular datasets.
+ - Target-specific bioactivity prediction.
+ - ChEMBL integration.
+ - Molecular fingerprint and descriptor benchmarking.
+ 
