@@ -235,7 +235,6 @@ The four bond-aware GNNs are evaluated using the same dataset and scaffold split
 <img width="950" height="580" alt="image" src="https://github.com/user-attachments/assets/8cd813b5-5965-4891-a00b-1ab7464a9e30" />
 
 ## Project Structure
-<img width="1536" height="1024" alt="GCN Drug Discovery Project Structure" src="https://github.com/user-attachments/assets/8fb74992-ece7-4316-a58e-d059d096918e" />
 GCN-DrugDiscovery/  <br>
 │  <br>
 ├── data/  <br>
