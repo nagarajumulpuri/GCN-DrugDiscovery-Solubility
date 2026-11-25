@@ -261,7 +261,6 @@ GCN-DrugDiscovery/  <br>
 │   ├── rf_prediction_plot.png  <br>
 │   ├── bond_gnn_comparison.csv  <br>
 │   ├── part3_all_model_comparison.csv  <br>
-│   └── ...  <br>
 │  <br>
 ├── split_utils.py  <br>
 ├── train_gcn_part2.py  <br>
