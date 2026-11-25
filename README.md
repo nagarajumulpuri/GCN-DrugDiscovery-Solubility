@@ -236,43 +236,43 @@ The four bond-aware GNNs are evaluated using the same dataset and scaffold split
 
 ## Project Structure
 <img width="1536" height="1024" alt="GCN Drug Discovery Project Structure" src="https://github.com/user-attachments/assets/8fb74992-ece7-4316-a58e-d059d096918e" />
-GCN-DrugDiscovery/
-│
-├── data/
-│   └── ESOL/
-│
-├── models/
-│   ├── best_gcn.pt
-│   ├── random_forest.pkl
-│   ├── best_gcn_bond_gnn.pt
-│   ├── best_gin_bond_gnn.pt
-│   ├── best_graphsage_bond_gnn.pt
-│   └── best_gat_bond_gnn.pt
-│
-├── results/
-│   ├── split_indices.json
-│   ├── training_history.csv
-│   ├── gcn_metrics.csv
-│   ├── rf_metrics.csv
-│   ├── model_comparison.csv
-│   ├── gcn_test_predictions.csv
-│   ├── rf_test_predictions.csv
-│   ├── training_curves.png
-│   ├── gcn_prediction_plot.png
-│   ├── rf_prediction_plot.png
-│   ├── bond_gnn_comparison.csv
-│   ├── part3_all_model_comparison.csv
-│   └── ...
-│
-├── split_utils.py
-├── train_gcn_part2.py
-├── baseline_rf.py
-├── compare_models.py
-├── bond_features.py
-├── bond_aware_models.py
-├── train_bond_gnns.py
-├── compare_part3.py
-│
-├── README.md
-└── .gitignore
+GCN-DrugDiscovery/  
+│  
+├── data/  
+│   └── ESOL/  
+│  
+├── models/  
+│   ├── best_gcn.pt  
+│   ├── random_forest.pkl  
+│   ├── best_gcn_bond_gnn.pt  
+│   ├── best_gin_bond_gnn.pt  
+│   ├── best_graphsage_bond_gnn.pt  
+│   └── best_gat_bond_gnn.pt  
+│  
+├── results/  
+│   ├── split_indices.json  
+│   ├── training_history.csv  
+│   ├── gcn_metrics.csv  
+│   ├── rf_metrics.csv  
+│   ├── model_comparison.csv  
+│   ├── gcn_test_predictions.csv  
+│   ├── rf_test_predictions.csv  
+│   ├── training_curves.png  
+│   ├── gcn_prediction_plot.png  
+│   ├── rf_prediction_plot.png  
+│   ├── bond_gnn_comparison.csv  
+│   ├── part3_all_model_comparison.csv  
+│   └── ...  
+│  
+├── split_utils.py  
+├── train_gcn_part2.py  
+├── baseline_rf.py  
+├── compare_models.py  
+├── bond_features.py  
+├── bond_aware_models.py  
+├── train_bond_gnns.py  
+├── compare_part3.py  
+│  
+├── README.md  
+└── .gitignore  
 
